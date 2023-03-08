@@ -2,19 +2,47 @@
 <html>
 <head> Recommended links for begginers
 <style>
+body{margin:0;}
 ul{
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
+	background-color: black;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+li{
+	float: left;
+	border-right: 1px solid gray;
+}
+li:last child {
+	border-right: none;
+}
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 8px 10px;
+	text-decoration: none;
+}
+li a:hover:not(.active){
+	background-color: blue;
+}
+.active{
+	background-color: green;
 }
 </style>
 </head>
 <body>
 
 <ul>
+	<li><a class="active" href="#home">Home</a></li>
 	<li><a href="https://www.youtube.com/@BabojolaBlogspot">Jola Mazurek</a></li>
 	<li><a href="https://www.youtube.com/@magdaisznurek">Magda i sznurek</a></li>
 	<li><a href="https://www.youtube.com/@plotkadesign">Plotka design</a></li>
+	<li style="float:right"><a href="#about">About</a></li>
 </ul>
 
 </body>
