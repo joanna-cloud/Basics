@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rękodzieło</title>
+<style>
+.dropbtn {
+  background-color: blue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: grey}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+
+<h2>Recommended tutorials for begginers</h2>
+
+<div class="dropdown">
+  <button class="dropbtn">Links</button>
+  <div class="dropdown-content">
+  <a href="https://www.youtube.com/@BabojolaBlogspot">Jola Mazurek</a>
+  <a href="https://www.youtube.com/@magdaisznurek">Magda i sznurek</a>
+  <a href="https://www.youtube.com/@plotkadesign">Plotka design</a>
+  </div>
+</div>
+
+</body>
+</html>
